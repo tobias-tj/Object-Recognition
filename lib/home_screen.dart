@@ -94,10 +94,9 @@ class _HomeState extends State<Home> {
             ),
             Expanded(
                 child: GridView.builder(
-              physics: NeverScrollableScrollPhysics(),
               itemCount: myServices.length,
               padding: const EdgeInsets.all(18),
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2, childAspectRatio: 1 / 1.2),
               itemBuilder: (context, index) {
                 return MyServiceBox(
